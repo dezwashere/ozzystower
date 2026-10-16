@@ -1,0 +1,15 @@
+# INERT EXAMPLE: do not copy into active configuration before paid-usage approval.
+# deepseek-flash is a moving alias; verify it still maps to V4.1 Flash first.
+model = "deepseek-flash"
+model_provider = "deepseek"
+sandbox_mode = "read-only"
+approval_policy = "on-request"
+
+[agents]
+enabled = false
+
+[model_providers.deepseek]
+name = "DeepSeek"
+base_url = "https://api.deepseek.com/"
+wire_api = "responses"
+env_key = "DEEPSEEK_API_KEY"
